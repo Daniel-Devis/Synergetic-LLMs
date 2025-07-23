@@ -1,4 +1,4 @@
-# 🔍 Self-Reviewing LLMs for Unit Test Generation
+# 🔍 Synergetic-LLMs
 
 This project explores the capabilities of large language models (LLMs) — specifically **GPT-3.5 Turbo** and **GPT-4o Mini** — to generate and **self-review** unit test cases for focal methods using a Synergetic-LLM framework. It assesses whether LLMs can reliably generate, critique, and improve unit tests.
 
