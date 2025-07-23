@@ -1,6 +1,6 @@
 # 🔍 Self-Reviewing LLMs for Unit Test Generation
 
-This project explores the capabilities of large language models (LLMs) — specifically **GPT-3.5 Turbo** and **GPT-4o Mini** — to automatically generate and **self-review** unit tests for Java methods using a dual-LLM evaluation framework. It assesses whether LLMs can reliably generate, critique, and improve unit tests without human involvement.
+This project explores the capabilities of large language models (LLMs) — specifically **GPT-3.5 Turbo** and **GPT-4o Mini** — to generate and **self-review** unit test cases for focal methods using a Synergetic-LLM framework. It assesses whether LLMs can reliably generate, critique, and improve unit tests.
 
 ---
 
@@ -8,7 +8,7 @@ This project explores the capabilities of large language models (LLMs) — speci
 
 - Fine-tune LLMs on paired Java focal methods and reference unit tests from the [Methods2Test dataset](https://github.com/Software-Systems-Lab/Methods2Test).
 - Use the fine-tuned models to generate unit tests for unseen Java methods.
-- Employ a secondary LLM to evaluate and review the generated tests.
+- Employ a Synergetic LLM to evaluate and review the generated tests.
 - Measure effectiveness using metrics like **CodeBLEU**, **Precision**, **Recall**, and **F1 Score**.
 
 ---
@@ -36,11 +36,3 @@ This project uses the [Methods2Test dataset](https://github.com/Software-Systems
 - Focal methods
 - Associated reference unit tests
 
----
-
-## ⚙️ Setup & Usage
-
-### 1. Install Dependencies
-
-```bash
-pip install openai codebleu
