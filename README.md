@@ -25,7 +25,7 @@ This project explores the capabilities of large language models (LLMs) — speci
 | `4ogpttestgencheck.py`  | Evaluates test cases from GPT-4o Mini similarly. |
 | `jasonifier.py`         | Creates JSONL fine-tuning files with focal methods and reference test cases. |
 | `fulevalcsv.py`         | Converts evaluation results into a CSV with CodeBLEU, Precision, Recall, and F1 Score columns. |
-
+| `data.zip`              | Contains all collected data from the experiment, including generations from all models and empirical analysis data. |
 
 ---
 
@@ -35,4 +35,3 @@ This project uses the [Methods2Test dataset](https://github.com/Software-Systems
 - Java class files
 - Focal methods
 - Associated reference unit tests
-
