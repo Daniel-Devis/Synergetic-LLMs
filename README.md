@@ -6,7 +6,7 @@ This project explores the capabilities of large language models (LLMs) — speci
 
 ## 🧠 Project Overview
 
-- Fine-tune LLMs on paired Java focal methods and reference unit tests from the [Methods2Test dataset](https://github.com/Software-Systems-Lab/Methods2Test).
+- Fine-tune LLMs on paired Java focal methods and reference unit tests from the [Methods2Test dataset](https://github.com/microsoft/methods2test)
 - Use the fine-tuned models to generate unit tests for unseen Java methods.
 - Employ a Synergetic LLM to evaluate and review the generated tests.
 - Measure effectiveness using metrics like **CodeBLEU**, **Precision**, **Recall**, and **F1 Score**.
