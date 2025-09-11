@@ -2,7 +2,7 @@ import json
 from openai import OpenAI
 
 # Set your OpenAI API key
-api_key = 'sk-proj-nHOCVhxVdSDDA8n4RhA0T3BlbkFJKuagthNlsw9UQ9v1Xuzm'  # Replace with your actual OpenAI API key
+api_key = ''  # Replace with your actual OpenAI API key
 client = OpenAI(api_key=api_key)
 
 # Path to the test JSONL file containing focal methods
@@ -54,3 +54,4 @@ with open(output_file, 'w', encoding='utf-8') as f:
     json.dump(predictions, f, indent=4)
 
 print(f"Predictions saved to {output_file}")
+
