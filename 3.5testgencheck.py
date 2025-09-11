@@ -2,7 +2,7 @@ import json
 from openai import OpenAI
 
 # Set your OpenAI API key
-api_key = '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'  # Replace with your actual OpenAI API key
+api_key = ''  # Replace with your actual OpenAI API key
 client = OpenAI(api_key=api_key)
 
 # Path to the JSON file containing focal methods and generated test cases
@@ -56,3 +56,4 @@ with open(output_json_file, 'w', encoding='utf-8') as f:
     json.dump(reviewed_cases, f, indent=4)
 
 print(f"Reviewed test cases saved to {output_json_file}")
+
