@@ -1,6 +1,6 @@
 # 🔍 Synergetic-LLMs
 
-This project explores the capabilities of large language models (LLMs) — specifically **GPT-3.5 Turbo** and **GPT-4o Mini** — to generate and **self-review** unit test cases for focal methods using a Synergetic-LLM framework. It assesses whether LLMs can reliably generate, critique, and improve unit tests.
+This project explores the capabilities of large language models (LLMs) — specifically **GPT-3.5 Turbo**,**GPT-4o Mini** and **GPT-4.1 Mini** — to generate and **self-review** unit test cases for focal methods using a Synergetic-LLM framework. It assesses whether LLMs can reliably generate, critique, and improve unit tests.
 
 ---
 
@@ -15,16 +15,21 @@ This project explores the capabilities of large language models (LLMs) — speci
 
 ## 🗂️ File Descriptions
 
-| Filename               | Description |
-|------------------------|-------------|
+| Filename                | Description |
+|-------------------------|-------------|
 | `3.5finetune.py`        | Fine-tunes GPT-3.5 Turbo using JSONL data via OpenAI API. |
+| `4.1minifinetune.py`    | Fine-tunes GPT-4.1mini Turbo using JSONL data via OpenAI API. |
 | `4ominifinetune.py`     | Fine-tunes GPT-4o Mini using JSONL data via OpenAI API. |
+| `4.1mini.py`            | Uses the fine-tuned GPT-4.1mini to generate unit tests for Java focal methods. |
 | `3.5generator.py`       | Uses the fine-tuned GPT-3.5 to generate unit tests for Java focal methods. |
 | `4ogptmini.py`          | Uses the fine-tuned GPT-4o Mini to generate unit tests. |
 | `3.5testgencheck.py`    | Evaluates test cases from GPT-3.5 using CodeBLEU, Precision, Recall, F1 Score, and dual-LLM review. |
 | `4ogpttestgencheck.py`  | Evaluates test cases from GPT-4o Mini similarly. |
+| `4.1minitestgencheck.py`| Evaluates test cases from GPT-4o Mini similarly. |
 | `jasonifier.py`         | Creates JSONL fine-tuning files with focal methods and reference test cases. |
 | `fulevalcsv.py`         | Converts evaluation results into a CSV with CodeBLEU, Precision, Recall, and F1 Score columns. |
+| `Stats.py`              | Conducts statistical analysis on the CSV results of generations vs generations and the reviewed generation vs reviewed generation. |
+| `Stats2.py`             | Conducts statistical analysis on the CSV results of generations and the reviewed generation. |
 | `data.zip`              | Contains all collected data from the experiment, including generations from all models and empirical analysis data. |
 
 ---
